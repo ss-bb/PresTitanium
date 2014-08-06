@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		
+		<title>Titanium | GOYON Olivier</title>
+
+		<meta name="description" content="La présentation titanium pour CLERMONTECH">
+		<meta name="author" content="Olivier GOYON">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+
+
+
+
+        <!--[if lt IE 9]>
+		<script src="reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section id="PageGarde">
+
+					<h1>TITANIUM <br />Appcelerator</h1>
+                    <img src="images/fond1.png" alt="imagefond1">
+					<p><small>By <a class="cover" href="http://ss-bb.github.io/">Olivier GOYON</a></small></p>
+					<p>
+						<small style="float: left">Clemont'ech APIHour #11</small>
+						<small style="float: right">01/09/2014</small>
+					</p>
+
+                    <aside class="notes">
+                        KEEP CALM , STILL LOADING ! et destresser, respirer.
+                    </aside>
+
+				</section>
+
+                <section>
+                    <h2>What is this "thing"?</h2>
+                    <p>Titanium is a framework to create powerfull mobile app</p>
+
+                    <aside class="notes">
+                        Les application mobile remplace rapidement les application web dans la mesure on on partage, on apprend et on achète sur telephone maintenant.
+                        Titanium, c'est un framework pour crée des application mobile puissante rapidement.
+                        Parlons plutot application mobile, comment crée une application mobile de nos jour.
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Mobile APP ? </h2>
+                    <ul>
+                        <li>Native Code <p class="fragment">WINNER, but ...</p></li>
+                        <li><strong>Cross-Plateform Mobile Framework</strong></li>
+                        <li class="fragment">( HTML5 webresponsive )</li>
+                    </ul>
+
+                    <p>
+                        <br />
+                        <i class="fa fa-book fragment"><a href="http://fr.slideshare.net/appcelerator/appcelerator-html5-prezfinal">Native VS HTML5</a></i>
+                    </p>
+
+                    <aside class="notes">
+                        native : c'est cool, rapide, mais il faut redevelopper pour chaque OS, apprendre != langage, de même pour les changements , etc etc.
+                        Framework : detaillez apres.Un seule developpement, facile a maintenir pour toute les applications.
+                        HTML5 : c'est un bon choix si : on ne veus pas télécharger d'appli ou si les informations dans l'appli change en permanenc etrès rapidement.
+                        je vous invite d'ailleur a aller voir, c'est complet et objectif.
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h2>Cross-Plateform Mobile Framework</h2>
+                    <ul>
+                        <li> <strong>Appcelerator Titanium</strong> </li>
+                        <li> <strong>PhoneGap / Apache Cordova</strong> </li>
+                        <li class="fragment"> MoSync </li>
+                        <li class="fragment"> RhoMobile/Rhodes</li>
+                        <li class="fragment"> Mono/Xamarin </li>
+                    </ul>
+
+                    <aside class="notes">
+                        pour les technologie WEB , 2 outil sont en concurrence direct.
+                        mais n'oublions pas pour les autres : mosync pour c , c++ , meme pour php python ,
+                        bonne IDE mais compiler en html5 , pb d'acces au fonction native comme liste contact , photo , etc.
+                        de même pour Rhomobile/rhodes en ruby , Xamarin en c#, et bien d'autre.
+                    </aside>
+
+                </section>
+
+                <section>
+                    <h2>TITANIUM Vs PHONEGAP</h2>
+
+                    <table >
+                        <tr>
+                            <th>OS</th>
+                            <th>PHONEGAP</th>
+                            <th>TITANIUM</th>
+                        </tr>
+                        <tr>
+                            <td>ANDROID</td>
+                            <td style="text-align: center">yes</td>
+                            <td style="text-align: center">yes</td>
+                        </tr>
+                        <tr>
+                            <td>IOS</td>
+                            <td style="text-align: center">yes</td>
+                            <td style="text-align: center">yes</td>
+                        </tr>
+                        <tr>
+                            <td>BLACKBERRY</td>
+                            <td style="text-align: center">yes</td>
+                            <td style="text-align: center">yes</td>
+                        </tr>
+                        <tr>
+                            <td>WINDOWS PHONE</td>
+                            <td style="text-align: center">yes</td>
+                            <td style="text-align: center;color:red;">no</td>
+                        </tr>
+                        <tr>
+                            <td>BADA-SYMBIAN-AUTRE</td>
+                            <td style="text-align: center">yes</td>
+                            <td style="text-align: center;color:red;">no</td>
+                        </tr>
+
+                    </table>
+
+                    <aside class="notes">
+                        La guerre titanium /phonegap. Vous trouverez des tas et des tas d'article dessus, je vais résumer grossièrement en 2 points:
+                        titanium ne suport que 4 envrironnement, android, IOS, blackberry et TIZEN
+                        tandis que phonegap les gère tous.
+                        donc avec titanium , vous ne visez que 85 % de marché, mais le manque de windows pour les client peut etre important.
+                        -> les appli android compatible windows, j'ai essayer, ca marche pas.
+
+
+                    </aside>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>TITANIUM Vs PHONEGAP , Round TWO</h2>
+
+                        <p>Phonegap</p>
+                        <ul>
+                            <li> <strong>Uses the browser graphics engine</strong></li>
+                            <li>Camera</li>
+                            <li>file system</li>
+                            <li>accelerometer</li>
+                            <li>Contact list</li>
+                            <li>GeoLoc</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <p>Titanium</p>
+                        <ul>
+                            <li> <strong>Create native IHM component</strong></li>
+                            <li>All from Phonegap</li>
+                            <li>Database</li>
+                            <li>Contact management</li>
+                            <li>playback/recording</li>
+                            <li>etc ....</li>
+                            <li class="fragment">... ALL ?</li>
+                        </ul>
+                    </section>
+
+
+                    <aside class="notes">
+                        parler RAPIDEMENT != entre rendu graphique et composant natife . != perfomance.
+                    </aside>
+                </section>
+
+                <section>
+                    
+                </section>
+			</div>
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
