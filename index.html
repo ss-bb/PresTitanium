@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 
 	<head>
 		
@@ -13,9 +13,7 @@
 		<link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
 		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
-
-
-
+        <link rel="stylesheet" href="correctionfont.css">
 
         <!--[if lt IE 9]>
 		<script src="reveal/lib/js/html5shiv.js"></script>
@@ -32,8 +30,8 @@
                     <img src="images/fond1.png" alt="imagefond1">
 					<p><small>By <a class="cover" href="http://ss-bb.github.io/">Olivier GOYON</a></small></p>
 					<p>
-						<small style="float: left">Clemont'ech APIHour #11</small>
-						<small style="float: right">01/09/2014</small>
+						<small style="float: left">Clemont'ech APIHour #1X</small>
+						<small style="float: right">xx/xx/201x</small>
 					</p>
 
                     <aside class="notes">
@@ -44,27 +42,38 @@
 
                 <section>
                     <h2>What is this "thing"?</h2>
+                    <img src="images/titanium.png" alt="logo titanium" style="width:200px;height: 200px;">
                     <p>Titanium is a framework to create powerfull mobile app</p>
 
                     <aside class="notes">
-                        Les application mobile remplace rapidement les application web dans la mesure on on partage, on apprend et on achète sur telephone maintenant.
-                        Titanium, c'est un framework pour crée des application mobile puissante rapidement.
+                        Le Problème -> beaucoup de plateforme native.
+                        ce qui implique qu'il faut crée des applicatition mobile pour qui gère tous cela.Titanium, c'est un framework JS pour crée des application mobile puissante rapidement.
                         Parlons plutot application mobile, comment crée une application mobile de nos jour.
                     </aside>
                 </section>
 
                 <section>
-                    <h2>Mobile APP ? </h2>
-                    <ul>
-                        <li>Native Code <p class="fragment">WINNER, but ...</p></li>
-                        <li><strong>Cross-Plateform Mobile Framework</strong></li>
-                        <li class="fragment">( HTML5 webresponsive )</li>
-                    </ul>
 
-                    <p>
-                        <br />
-                        <i class="fa fa-book fragment"><a href="http://fr.slideshare.net/appcelerator/appcelerator-html5-prezfinal">Native VS HTML5</a></i>
-                    </p>
+                    <section>
+                        <h2>Mobile APP ? </h2>
+                        <ul>
+                            <li>Native Code <small class="fragment">(always win)</small> </li>
+                        </ul>
+                        <img class="fragment" src="images/imageNative.png" alt="pb Natif" >
+                    </section>
+
+                    <section>
+                        <h2>Mobile APP ? </h2>
+                        <ul>
+                            <li><strong>Cross-Plateform Mobile Framework</strong></li><br />
+                            <li class="fragment">( HTML5 webresponsive )</li>
+                        </ul>
+
+                        <p>
+                            <i style="font-family: 'FontAwesome';font-style: normal;" class="fa fa-book fragment"><a href="http://fr.slideshare.net/appcelerator/appcelerator-html5-prezfinal">APP VS HTML5</a></i>
+                        </p>
+                    </section>
+
 
                     <aside class="notes">
                         native : c'est cool, rapide, mais il faut redevelopper pour chaque OS, apprendre != langage, de même pour les changements , etc etc.
@@ -90,6 +99,8 @@
                         mais n'oublions pas pour les autres : mosync pour c , c++ , meme pour php python ,
                         bonne IDE mais compiler en html5 , pb d'acces au fonction native comme liste contact , photo , etc.
                         de même pour Rhomobile/rhodes en ruby , Xamarin en c#, et bien d'autre.
+
+
                     </aside>
 
                 </section>
@@ -97,7 +108,7 @@
                 <section>
                     <h2>TITANIUM Vs PHONEGAP</h2>
 
-                    <table >
+                    <table class="fragment">
                         <tr>
                             <th>OS</th>
                             <th>PHONEGAP</th>
@@ -121,7 +132,7 @@
                         <tr>
                             <td>WINDOWS PHONE</td>
                             <td style="text-align: center">yes</td>
-                            <td style="text-align: center;color:red;">no</td>
+                            <td style="text-align: center;color:red;">yes/no</td>
                         </tr>
                         <tr>
                             <td>BADA-SYMBIAN-AUTRE</td>
@@ -135,49 +146,307 @@
                         La guerre titanium /phonegap. Vous trouverez des tas et des tas d'article dessus, je vais résumer grossièrement en 2 points:
                         titanium ne suport que 4 envrironnement, android, IOS, blackberry et TIZEN
                         tandis que phonegap les gère tous.
-                        donc avec titanium , vous ne visez que 85 % de marché, mais le manque de windows pour les client peut etre important.
-                        -> les appli android compatible windows, j'ai essayer, ca marche pas.
-
-
+                        donc avec titanium , vous ne visez que 85 % de marché en Europe, le vrai probleme est le manque de windows pour les client, ca peut etre important.
+                        -> les appli android "compatible windows" , j'ai essayer, ca marche pas.
+                        pas plus d'une minute il faut aller vite la dessus !
                     </aside>
                 </section>
 
                 <section>
                     <section>
                         <h2>TITANIUM Vs PHONEGAP , Round TWO</h2>
-
                         <p>Phonegap</p>
-                        <ul>
-                            <li> <strong>Uses the browser graphics engine</strong></li>
-                            <li>Camera</li>
-                            <li>file system</li>
-                            <li>accelerometer</li>
-                            <li>Contact list</li>
-                            <li>GeoLoc</li>
+                        <ul class="fragment">
+                            <li> <h2 style="color:red">Uses the browser graphics engine ! </h2></li>
+                            <small>
+                                <li>Camera</li>
+                                <li>file system</li>
+                                <li>accelerometer</li>
+                                <li>Contact list</li>
+                                <li>GeoLoc</li>
+                            </small>
                         </ul>
                     </section>
 
                     <section>
                         <p>Titanium</p>
                         <ul>
-                            <li> <strong>Create native IHM component</strong></li>
-                            <li>All from Phonegap</li>
-                            <li>Database</li>
-                            <li>Contact management</li>
-                            <li>playback/recording</li>
-                            <li>etc ....</li>
-                            <li class="fragment">... ALL ?</li>
+                            <li> <h2 style="color:green">Create native IHM component !</h2></li>
+                            <small>
+                                <li>Same Phonegap</li>
+                                <li>Database</li>
+                                <li>Contact management</li>
+                                <li>playback/recording</li>
+                                <li>etc ....</li>
+                                <li>... ALL ?</li>
+                            </small>
                         </ul>
                     </section>
 
+                    <aside class="notes">
+                        parler RAPIDEMENT != entre rendu graphique et composant natif . != perfomance.
+                    </aside>
+
+                </section>
+
+                <section>
+
+                    <h1 style="color:blue">!! NATIVE !!</h1>
+                    <ul>
+                        <li class="l_performance">Performance</li>
+                        <li class="l_uicomponents">UI components</li>
+                        <li class="l_lookfeel">Look &amp; Feel</li>
+                        <li class="l_behavior">Comportement</li>
+                        <li class="l_services">Services</li>
+                        <li><i class="fa fa-check"></i><i class="fa fa-thumbs-o-up"></i><i class="fa fa-smile-o"></i></li>
+                    </ul>
+
+                </section>
+
+
+                <section>
+                    <h2>Titanium provide</h2>
+                    <ul>
+                        <li>SDK</li>
+                        <li>IDE</li>
+                        <li>Emulator(s)</li>
+                    </ul>
 
                     <aside class="notes">
-                        parler RAPIDEMENT != entre rendu graphique et composant natife . != perfomance.
+                        genymotion : The faster Android emulator ...
                     </aside>
                 </section>
 
                 <section>
-                    
+
+                    <h2>How Titanium Works</h2>
+                    <ul>
+                        <li >JAVASCRIPT CODE ONLY</li>
+                        <li >Titanium connecte JS to native API </li>
+                        <li > JS + JS engine + native API => native mobile APP</li>
+                    </ul>
+                    <img src="images/fonctionnement.png" style="width:400px;height: 300px;">
+
+                </section>
+
+                <section>
+
+                    <section>
+                        <h2>How Titanium code look like ? <small>for Js sucker</small></h2>
+
+                        <pre>
+                            <code data-trim contenteditable>
+var win = Ti.UI.createWindow({
+    backgroundColor: '#f00'
+});
+                             </code>
+                        </pre>
+                    </section>
+
+
+                    <section>
+                        <h2>How Titanium code look like ? <small>for Js beginner</small></h2>
+
+                        <pre>
+                            <code data-trim contenteditable>
+var fenetre = Ti.UI.createWindow({
+    backgroundColor: '#f00'
+});
+
+var mavue = Ti.UI.createView({
+    backgroundColor: '#00f',
+    height: 200,
+    width: 200
+});
+
+mavue.addEventListener('click', function(e) {
+    alerte('click');//pour debug like a pro
+});
+
+fenetre.add(mavue);
+fenetre.open();
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <img src="images/image1OK.png"><br />
+                    </section>
+                    <section>
+                        <h2>Titanium debugger !</h2>
+                        <img src="images/erroralerte.png">
+                    </section>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>How Titanium code look like ? <small>for average Js</small></h2>
+
+                        <pre>
+                            <code data-trim contenteditable>
+var fenetre = Ti.UI.createWindow({
+    backgroundColor: '#f00'
+});
+
+var mavue = Ti.UI.createView({
+    backgroundColor: '#00f',
+    height: 200,
+    width: 200
+});
+
+mavue.addEventListener('click', function(e) {
+    alert('click');//no need
+});
+
+fenetre.add(mavue);
+fenetre.open();
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <img src="images/alerteok.png">
+                    </section>
+
+                </section>
+
+
+                <section>
+                    <section>
+                        <h2>How Titanium code look like ? <small>for nice JS</small></h2>
+
+                        <pre>
+                            <code data-trim contenteditable>
+var fenetreBase = Titanium.UI.createWindow({
+    fullscreen : true,
+    navBarHidden : true,
+    backgroundColor : "white",
+    exitOnClose : true
+});
+
+fenetreBase.orientationModes = [Ti.UI.LANDSCAPE_LEFT];
+
+var vueconfigUser = new (require('UI/viewconfigUser'))();
+
+fenetre.add(vueconfigUser);
+fenetre.open();
+                            </code>
+                        </pre>
+                    </section>
+                    <section>
+                        <pre>
+                            <code data-trim contenteditable>
+//dans viewconfigUser
+function viewconfig() {
+    var lavue = Ti.UI.createView({backgroundColor:'white' });
+
+    var login = Ti.UI.createTextField({
+        hintText:"saisissez votre login"
+        //du code
+    });
+
+    var password = ...;
+
+    //code, codeur ,coder
+
+return lavue;
+}
+module.exports = viewconfig;
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <img src="images/gestionUser.png" alt="gestion user">
+                    </section>
+                </section>
+
+                <section>
+                    <h2>Javascript, no pattern you said?</h2>
+                    <h2 class="fragment">titanium == Javascript , i hate Js!</h2>
+                    <br />
+                    <h1 class="fragment">FAUX</h1>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Alloy</h2>
+                        <p>Alloy is a development framework to facilitate the rapid development of high quality mobile applications.</p>
+                        <p>It follows a model-view-controller (MVC) architecture</p>
+                        <p class="fragment">XML Views, Data Migration in JSON , etc etc</p>
+                        <i class="fa fa-video-camera"><a href="http://player.vimeo.com/video/52765325?color=4CC208&api=1">Alloy presentation at CODESTRONG conf</a></i>
+
+                    </section>
+                    <section>
+                        <h2>Alloy Code ! <small>for Js new Expert we are !</small></h2>
+                        <pre>
+                            <code data-trim contenteditable>
+//une vue
+<Alloy>
+    <Window>
+        <ImageView id="imageView" onClick="clickImage"/>
+        <Label id="l">click sur l'image, click</Label>
+    </Window>
+</Alloy>
+                            </code>
+                        </pre>
+                        <pre>
+                            <code data-trim contenteditable>
+//un controleur
+function clickImage(e) {
+Titanium.UI.createAlertDialog({title:'Image View', message:'You clicked me!'}).show();
+}
+$.index.open();
+                            </code>
+                        </pre>
+                    </section>
+
+                    <section>
+                        <h2>Alloy : TO MUCH THINGS</h2>
+                        <ul>
+                            <li>MVC</li>
+                            <li>Widgets</li>
+                            <li>Tasks</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <h2>titanium documentation</h2>
+
+                    <i class="fa fa-file"></i><a href="http://docs.appcelerator.com/titanium/latest/">Documentation</a><br />
+                    <i class="fa fa-file"></i><a href="https://github.com/appcelerator/KitchenSink">kitchen sink</a>
+
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Titanium Windows -> soon (Q4 2014?)</h2>
+
+                        <p>
+                            Currently, Windows 8 App development with the Titanium SDK is restricted with the following conditions:<br />
+                            All development is done through the command-line tools. No support with Titanium or Appcelerator Studio.<br />
+                            You can only test applications locally on the same machine you are developing on. No support for testing remotely or with the simulator.
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Concretement :</h2>
+                        <p>
+                            Visual Studio 2012 supports the Windows 8 SDK<br />
+                            Visual Studio 2013 supports the Windows 8.1 SDK<br />
+                            Use Power...Shell...
+                        </p>
+
+                        <i class="fa fa-file"> <a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Getting_Started_with_the_Windows_8_SDK">Getting Start Windows8 SDK</a></i>
+                    </section>
+
+                </section>
+
+                <section>
+                    <h1>Thanks! Merci !</h1>
+                    <h2>Any questions? Des questions?</h2>
+
                 </section>
 			</div>
 		</div>
@@ -191,8 +460,10 @@
 			Reveal.initialize({
 				controls: true,
 				progress: true,
-				history: true,
+                slideNumber: true,
+                history: false,
 				center: true,
+                fragments: true,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
