@@ -35,7 +35,8 @@
 					</p>
 
                     <aside class="notes">
-                        KEEP CALM , STILL LOADING ! et destresser, respirer.
+                        KEEP CALM , STILL LOADING ! et no stresse, respirer.
+                        Je vais passer assez rapidement sur les première diapo afin qu'on l'on puisse parler plus profondement de Titanium ensuite.
                     </aside>
 
 				</section>
@@ -79,7 +80,7 @@
                         native : c'est cool, rapide, mais il faut redevelopper pour chaque OS, apprendre != langage, de même pour les changements , etc etc.
                         Framework : detaillez apres.Un seule developpement, facile a maintenir pour toute les applications.
                         HTML5 : c'est un bon choix si : on ne veus pas télécharger d'appli ou si les informations dans l'appli change en permanenc etrès rapidement.
-                        je vous invite d'ailleur a aller voir, c'est complet et objectif.
+                        je vous invite d'ailleur a aller voir ce lien , c'est une présentation courte et intéréssante de quand faire des applimobile ou quand faire des site webresponsive.
                     </aside>
                 </section>
 
@@ -96,11 +97,10 @@
 
                     <aside class="notes">
                         pour les technologie WEB , 2 outil sont en concurrence direct.
-                        mais n'oublions pas pour les autres : mosync pour c , c++ , meme pour php python ,
-                        bonne IDE mais compiler en html5 , pb d'acces au fonction native comme liste contact , photo , etc.
+                        mais n'oublions pas pour les autres : mosync pour c , c++ , meme pour php python,bonne IDE mais compiler en html5 , pb d'acces au fonction native comme liste contact , photo , etc.
                         de même pour Rhomobile/rhodes en ruby , Xamarin en c#, et bien d'autre.
 
-
+                        timer 2,30
                     </aside>
 
                 </section>
@@ -148,7 +148,8 @@
                         tandis que phonegap les gère tous.
                         donc avec titanium , vous ne visez que 85 % de marché en Europe, le vrai probleme est le manque de windows pour les client, ca peut etre important.
                         -> les appli android "compatible windows" , j'ai essayer, ca marche pas.
-                        pas plus d'une minute il faut aller vite la dessus !
+
+                        pas plus d'une minute.
                     </aside>
                 </section>
 
@@ -184,7 +185,7 @@
                     </section>
 
                     <aside class="notes">
-                        parler RAPIDEMENT != entre rendu graphique et composant natif . != perfomance.
+                        parler RAPIDEMENT != fonction et != NATIF !
                     </aside>
 
                 </section>
@@ -201,8 +202,22 @@
                         <li><i class="fa fa-check"></i><i class="fa fa-thumbs-o-up"></i><i class="fa fa-smile-o"></i></li>
                     </ul>
 
+                    <aside class="notes">
+                        timer 4min
+                    </aside>
+
                 </section>
 
+                <section>
+                    <h2>Titanium History</h2>
+
+                    <ol>
+                        <li class="fragment">Titanium 1.x</li>
+                        <li class="fragment">Titanium 2.x</li>
+                        <li class="fragment">Titanium 3.x</li>
+                        <li class="fragment">Ti.next</li>
+                    </ol>
+                </section>
 
                 <section>
                     <h2>Titanium provides</h2>
@@ -221,7 +236,7 @@
 
                     <h2>How Titanium works</h2>
                     <ul>
-                        <li >JAVASCRIPT CODE ONLY</li>
+                        <li >Javascript code !</li>
                         <li >Titanium connects JS to native API </li>
                         <li > JS + JS engine + native API => native mobile APP</li>
                     </ul>
@@ -296,7 +311,7 @@ var mavue = Ti.UI.createView({
 });
 
 mavue.addEventListener('click', function(e) {
-    alert('click');//no need
+    alerte('click');
 });
 
 fenetre.add(mavue);
@@ -335,6 +350,7 @@ fenetre.open();
                         </pre>
                     </section>
                     <section>
+                        <h2>Js => Node | Require | Common</h2>
                         <pre>
                             <code data-trim contenteditable>
 //dans viewconfigUser
@@ -360,7 +376,45 @@ module.exports = viewconfig;
                     <section>
                         <img src="images/gestionUser.png" alt="gestion user">
                     </section>
+
+                    <aside class="notes">
+                        faire du code propre et modulaire n'est pas interdit par la convention de genève !
+                    </aside>
+
                 </section>
+
+                <section>
+                    <section>
+                        <h2>OK, I can code, is that all ?</h2>
+
+                        <h2 class="fragment">NO !</h2>
+                    </section>
+
+                    <section>
+                        <h2>Monitoring allocations</h2>
+
+                        <p>On IOS : iOS simulator</p>
+                        <p>On Android : DDMS</p>
+                    </section>
+
+                    <section>
+                        <h2>Deployement on Appstore</h2>
+
+                        <p>with titanium >3.2 ->right click, deploy on App , follow instruction.</p>
+                        <p>titanium < 3.2 , same step but no next button.</p>
+
+                    </section>
+
+                    <section>
+                        <h2>You want some cloud also. Easy</h2>
+
+                        <p>Appcelerator Cloud Services</p>
+                        <P>Appcelerator Cloud Services provide a wide array of automatically scaled network features and data objects.</p>
+
+                    </section>
+                </section>
+
+
 
                 <section>
                     <h2>Javascript, no pattern you said?</h2>
@@ -408,6 +462,8 @@ $.index.open();
                             <li>MVC</li>
                             <li>Widgets</li>
                             <li>Tasks</li>
+                            <li>Tests</li>
+                            <li>...</li>
                         </ul>
                     </section>
                 </section>
@@ -417,26 +473,22 @@ $.index.open();
 
                     <i class="fa fa-file"></i><a href="http://docs.appcelerator.com/titanium/latest/">Documentation</a><br />
                     <i class="fa fa-file"></i><a href="https://github.com/appcelerator/KitchenSink">Kitchen sink</a>
+                    <p>CODESTRONG</p>
 
                 </section>
 
                 <section>
                     <section>
-                        <h2>Titanium Windows -> soon (Q4 2014?)</h2>
+                        <h2>Titanium Windows -> soon (Q1 2015?)</h2>
 
-                        <p>
-                            Currently, Windows 8 App development with the Titanium SDK is restricted with the following conditions:<br />
-                            All development is done through the command-line tools. No support with Titanium or Appcelerator Studio.<br />
-                            You can only test applications locally on the same machine you are developing on. No support for testing remotely or with the simulator.
-                        </p>
+                        <p>doc: "Currently, Windows 8 App development and Windows Phone 8 App ...."</p>
+                        <p class="fragment">tl;dr : Windows8 is done through the command-line tools(Power...shell)</p>
                     </section>
                     <section>
                         <h2>Concretely :</h2>
-                        <p>
-                            Visual Studio 2012 supports the Windows 8 SDK<br />
-                            Visual Studio 2013 supports the Windows 8.1 SDK<br />
-                            Use Power...Shell...
-                        </p>
+                        <p>Windows 8 SDK required Visual Studio 2012</p>
+                        <p>Windows 8.1 SDK required Visual Studio 2013 </p>
+                        <p>Windows Phone 8 development is only supports on systems running 64-bit Windows 8. Visual Studio 2012 Pro edition or higher is required to run the Windows Phone simulator.</p>
 
                         <i class="fa fa-file"> <a href="http://docs.appcelerator.com/titanium/latest/#!/guide/Getting_Started_with_the_Windows_8_SDK">Getting Start Windows8 SDK</a></i>
                     </section>
