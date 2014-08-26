@@ -242,7 +242,7 @@
 
                         <pre>
                             <code data-trim contenteditable>
-var win = Ti.UI.createWindow({
+var Win = Ti.UI.createWindow({
     backgroundColor: '#f00'
 });
                              </code>
@@ -255,22 +255,22 @@ var win = Ti.UI.createWindow({
 
                         <pre>
                             <code data-trim contenteditable>
-var fenetre = Ti.UI.createWindow({
+var Window = Ti.UI.createWindow({
     backgroundColor: '#f00'
 });
 
-var mavue = Ti.UI.createView({
+var MyView = Ti.UI.createView({
     backgroundColor: '#00f',
     height: 200,
     width: 200
 });
 
-mavue.addEventListener('click', function(e) {
+MyView.addEventListener('click', function(e) {
     alerte('click');//pour debug like a pro
 });
 
-fenetre.add(mavue);
-fenetre.open();
+Window.add(MyView);
+Window.open();
                             </code>
                         </pre>
                     </section>
@@ -295,19 +295,19 @@ fenetre.open();
 
                         <pre>
                             <code data-trim contenteditable>
-var fenetreBase = Titanium.UI.createWindow({
+var Window = Titanium.UI.createWindow({
     fullscreen : true,
     navBarHidden : true,
     backgroundColor : "white",
     exitOnClose : true
 });
 
-fenetreBase.orientationModes = [Ti.UI.LANDSCAPE_LEFT];
+Window.orientationModes = [Ti.UI.LANDSCAPE_LEFT];
 
-var vueconfigUser = new (require('UI/viewconfigUser'))();
+var UserView = new (require('UI/viewconfigUser'))();
 
-fenetre.add(vueconfigUser);
-fenetre.open();
+Window.add(UserView);
+Window.open();
                             </code>
                         </pre>
                     </section>
@@ -316,21 +316,21 @@ fenetre.open();
                         <pre>
                             <code data-trim contenteditable>
 //dans viewconfigUser
-function viewconfig() {
-    var lavue = Ti.UI.createView({backgroundColor:'white' });
+function viewConfig() {
+    var UserView = Ti.UI.createView({backgroundColor:'white' });
 
-    var login = Ti.UI.createTextField({
+    var Login = Ti.UI.createTextField({
         hintText:"saisissez votre login"
         //du code
     });
 
-    var password = ...;
+    var Password = ...;
 
     //code, codeur ,coder
 
-return lavue;
+return UserView;
 }
-module.exports = viewconfig;
+module.exports = viewConfig;
                             </code>
                         </pre>
                     </section>
