@@ -43,7 +43,7 @@
                 <section>
                     <h2>What is this "thing"?</h2>
                     <img src="images/titanium.png" alt="logo titanium" style="width:200px;height: 200px;">
-                    <p>Titanium is a framework to create powerful cross-plateforme mobile apps</p>
+                    <p>Titanium is a (free) framework to create powerful cross-plateforme mobile apps</p>
 
                     <aside class="notes">
                         Le Problème -> beaucoup de plateforme native.
@@ -138,10 +138,8 @@
 
                     <aside class="notes">
                         La guerre titanium /phonegap. Vous trouverez des tas et des tas d'article dessus, je vais résumer grossièrement en 2 points:
-                        titanium ne suport que 4 envrironnement, android, IOS, blackberry et TIZEN
-                        tandis que phonegap les gère tous.
-                        donc avec titanium , vous ne visez que 85 % de marché en Europe, le vrai probleme est le manque de windows pour les client, ca peut etre important.
-                        -> les appli android "compatible windows" , j'ai essayer, ca marche pas.
+						ne pas regarder les article avant fin 2013
+                        TIZEN.
 
                         pas plus d'une minute.
                     </aside>
@@ -190,7 +188,6 @@
                         <li class="l_uicomponents">UI components</li>
                         <li class="l_lookfeel">Look &amp; Feel</li>
                         <li class="l_behavior">Behavior</li>
-                        <li class="l_services">Services</li>
                         <li class="fragment" style="list-style: none"><i class="fa fa-check"></i><i class="fa fa-thumbs-o-up"></i><i class="fa fa-smile-o"></i></li>
                     </ul>
 
@@ -266,7 +263,7 @@ var MyView = Ti.UI.createView({
 });
 
 MyView.addEventListener('click', function(e) {
-    alerte('click');//pour debug like a pro
+    alerte('coucou1');//pour debug like a pro
 });
 
 Window.add(MyView);
@@ -290,6 +287,12 @@ Window.open();
                 </section>
 
                 <section>
+				
+					<section>
+						<h2> The goal :</h2>
+                        <img src="images/gestionUser.png" alt="gestion user">
+                    </section>
+				
                     <section>
                         <h2>How Titanium code looks like ? <small>for nice JS</small></h2>
 
@@ -333,10 +336,6 @@ return UserView;
 module.exports = viewConfig;
                             </code>
                         </pre>
-                    </section>
-
-                    <section>
-                        <img src="images/gestionUser.png" alt="gestion user">
                     </section>
 
                     <aside class="notes">
@@ -399,8 +398,8 @@ module.exports = viewConfig;
 // a view
 <Alloy>
     <Window>
-        <ImageView id="imageView" onClick="clickImage"/>
-        <Label id="l">click the picture</Label>
+        <ImageView id="imageView" onClick="clickImage"></ImageView>
+        <Label>click the picture</Label>
     </Window>
 </Alloy>
                             </code>
@@ -441,8 +440,8 @@ $.index.open();
                     <section>
                         <h2>Titanium Windows -> soon (Q4 2014 OR Q1 2015?)</h2>
 
-                        <p>doc: "Currently, Windows 8 App development and Windows Phone 8 App ...."</p>
-                        <p class="fragment" style="color:blue">tl;dr : Windows8 is done through the command-line tools(Powershell)</p>
+                        <p>doc: "Currently, Windows 8 App development and ..."</p>
+                        <p class="fragment" style="color:blue">tl;dr : Windows 8 et windows phone is done through the command-line tools(Powershell)</p>
                     </section>
                     <section>
                         <h2>Concretely :</h2>
