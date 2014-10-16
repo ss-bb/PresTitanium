@@ -1,4 +1,4 @@
-La présentation de Titanium pour clermontech -> http://clermontech.org/
+La présentation de Titanium pour clermontech => http://clermontech.org/
 
 Suite a la conférence, je vais revenir sur certaines question qui ont été posée: 
 
@@ -31,11 +31,14 @@ d'autre posée via le tableau :
 
 4) Je n'ai malheureusement pas trouvé de chiffre officiel et ma question est resté pour l'instant sans réponse, j'ai trouvé au travers de divers forum un tarif qui serait d'environ 700€/10dev/ans. Je n'engage rien sur ces valeurs !
 
-5) En théorie et si vous vous acharnez un peu. Cela 'semble possible' , je n'ai pas essayer. Le problème, c'est que pour compiler du IOS, il faut le IOS SDK et tous le tralala (politique Apple win). Autre point dont je n'ai pas parler, pour BLACKBERRY , il faudrat passer par windows !
+5) En théorie et si vous vous acharnez un peu. Cela 'semble possible' , je n'ai pas essayer. Le problème, c'est que pour compiler du IOS, il faut le IOS SDK disponible "que" si l'on a un MAC et tous le tralala (politique Apple win).
+Autre point dont je n'ai pas parler, pour BLACKBERRY , il faudrat passer par windows !
 
 6) Plein , vous trouverez certain exemple sur http://www.appcelerator.com/customers/app-showcase/
 
-7) Pour répondre a la question en un mot : Non. Mais il y a deux choses a souligner: titanium est plus prévu pour faire un code rapide/facile OU un code plus compliquer avec de bien meilleur performance, qui implique d'aller en profondeur dans le framework mais d'optenir des super performance (voir CODESTRONG). 2eme chose: utilisé ALLOY semble être un peu plus lent que un projet titanium "classic". Mais dans des proportion moindre.
+7) Pour répondre a la question en un mot : Non. 
+Mais il y a deux choses a souligner: titanium est plus prévu pour faire un code rapide/facile OU un code plus compliquer avec de bien meilleur performance, qui implique d'aller en profondeur dans le framework mais d'optenir des super performance (voir CODESTRONG). 2eme chose: utilisé ALLOY semble être un peu plus lent que un projet titanium "classic". Mais dans des proportion moindre.
+
 
 Je m'efforcerai de completer ce README au fur et a mesure.
 
