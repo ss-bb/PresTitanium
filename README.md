@@ -5,14 +5,19 @@ Suite a la conférence, je vais revenir sur certaines question qui ont été pos
 Celle répondu pendant les 5 minute de Q&A :
 
 1)Accesibilité aux fonctions comme caméra/etc ? 
+
 2)Communauté sur Titanium (comparer a Sencha Touch ou cela semble vite limitée) ?
+
 3)Le % de code partagé entre toutes les plateforme via Titanium?
+
 4)Le prix de la version pro?
 
 d'autre posée via le tableau :
 
 5)possibilité de compiler du IOS sous linux?
+
 6)Exemple d'application codée avec titanium?
+
 7)Les performances sont t'elle aussi bien que du natif?
 
 
