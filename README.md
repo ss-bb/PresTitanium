@@ -38,7 +38,7 @@ Autre point dont je n'ai pas parler, pour BLACKBERRY , il faudrat developper sur
 
 7) Pour répondre a la question en un mot : Non. 
 Mais il y a deux choses a souligner: 
-  -1er: titanium est plus prévu pour faire un code rapide/facile OU un code plus compliquer avec de bien meilleur performance, qui implique d'aller en profondeur dans le framework mais d'optenir de bonne performance (voir CODESTRONG). 
+  -1er: titanium est prévu pour faire un code rapide/facile OU un code plus compliquer avec de bien meilleur performance, qui implique d'aller en profondeur dans le framework (voir CODESTRONG). 
   -2eme: utilisé ALLOY semble être un peu plus lent que un projet titanium "classic". Mais dans des proportion moindre.
 
 
